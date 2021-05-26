@@ -25,6 +25,7 @@ fn main() {
 
     // Where’s the -> Operator?
     // . operator vs -> operator
+
     // automatic referencing and dereferencing
     // rust는 호출에 따라 자동으로 &, &mut나 *를 추가한다.
     // p1.distance(&p2);
@@ -63,7 +64,6 @@ fn main() {
         }
     }
     let sq = Rectangle::square(3);
-    
 
     // Multiple impl Blocks
 }

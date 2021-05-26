@@ -20,8 +20,8 @@ fn main() {
     // let y = (let z = 6);
 
     let a = {
-        let x=3;
-        x+1
+        let x = 3;
+        x + 1
     };
     println!("a: {}", a);
 
@@ -32,7 +32,7 @@ fn main() {
     println!("five: {}", five());
 
     fn plus_one(x: i32) -> i32 {
-        x+1
+        x + 1;
     }
     println!("plus: {}", plus_one(5));
 }

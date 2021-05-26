@@ -9,12 +9,12 @@ fn main() {
         active: bool,
     }
 
-    // let user1 = User {
-    //     email: String::from("someone@example.com"),
-    //     username: String::from("someusername123"),
-    //     active: true,
-    //     sign_in_count: 1,
-    // };
+    let user1 = User {
+        email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
+        active: true,
+        sign_in_count: 1,
+    };
 
     let mut user1 = User {
         email: String::from("someone@example.com"),
@@ -25,17 +25,17 @@ fn main() {
 
     user1.email = String::from("anotheremail@example.com");
 
-    // fn build_user(email: String, username: String) -> User {
-    //     User {
-    //         email: email,
-    //         username: username,
-    //         active: true,
-    //         sign_in_count: 1,
-    //     }
-    // }
+    fn build_user(email: String, username: String) -> User {
+        User {
+            email: email,
+            username: username,
+            active: true,
+            sign_in_count: 1,
+        }
+    }
 
     // Using the Field Init Shorthand when Variables and Fields Have the Same Name
-    fn build_user(email: String, username: String) -> User {
+    fn build_user1(email: String, username: String) -> User {
         User {
             email,
             username,
@@ -57,9 +57,7 @@ fn main() {
         ..user1
     };
 
-    let user3 = User {
-        ..user1
-    };
+    let user3 = User { ..user2 };
 
     // Using Tuple Structs without Named Fields to Create Different Types
     struct Color(i32, i32, i32);
