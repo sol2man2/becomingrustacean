@@ -6,7 +6,6 @@ fn main() {
         width: u32,
         height: u32,
     }
-    
     impl Rectangle {
         fn area(&self) -> u32 {
             self.width * self.height
@@ -25,6 +24,15 @@ fn main() {
 
     // Where’s the -> Operator?
     // . operator vs -> operator
+
+    // .
+    // clazz y;
+    // y.method();
+
+    // ->
+    // clazz* x = new clazz();
+    // x->method();
+    // (*x)->method();
 
     // automatic referencing and dereferencing
     // rust는 호출에 따라 자동으로 &, &mut나 *를 추가한다.

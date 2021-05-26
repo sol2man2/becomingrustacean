@@ -21,6 +21,7 @@ fn main() {
     let mut s = "hello".to_string();
     let r1 = &mut s;
     // let r2 = &mut s;
+    // println!("{}, ", r2);
     // println!("{}, {}", r1, r2);
 
     // println!("s: {}", s);
@@ -32,10 +33,10 @@ fn main() {
     // At least one of the pointers is being used to write to the data.
     // There’s no mechanism being used to synchronize access to the data.
 
-    // {
-    //     let r1 = &mut s;
-    //     println!("r1 in block, {}", r1);
-    // }
+    {
+        let r1 = &mut s;
+        println!("r1 in block, {}", r1);
+    }
 
     // {
     //     let r3 = &mut s;
@@ -43,10 +44,15 @@ fn main() {
     // }
 
     // combining mutable and immutable ref.
-    // let r1 = &s; // no problem
-    // let r2 = &s; // no problem
+    let r1 = &s; // no problem
+    let r2 = &s; // no problem
+    println!("a: {}, {}", &r1, &r2);
+    println!("b: {}, {}", r1, r2);
+
     // let r3 = &mut s; // BIG PROBLEM
+
     // println!("{}, {}, and {}", r1, r2, r3);
+    // println!("{},", r3);
 
     // println!("r3, {}", r3);
 
@@ -64,6 +70,8 @@ fn main() {
     // }
 
     // The Rules of References
-    // At any given time, you can have either one mutable reference or any number of immutable references.
+    // At any given time, you can have
+    // 1: either one mutable reference
+    // 2: or any number of immutable references.
     // References must always be valid.
 }

@@ -34,6 +34,7 @@ fn main() {
         rectangle.width * rectangle.height
     }
 
+    #[derive(Debug)]
     struct Rectangle {
         width: u32,
         height: u32,
@@ -49,7 +50,7 @@ fn main() {
     );
 
     // Adding Useful Functionality with Derived Traits
-    println!("rect1 is {}", rect1);
+    // println!("rect1 is {}", rect1);
     // println!("rect1 is {:?}", rect1);
     // println!("rect1 is {:#?}", rect1);
 }

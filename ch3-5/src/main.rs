@@ -26,7 +26,7 @@ fn main() {
 
     // Using if in a let Statement
     let x = if number == 0 { 5 } else { 6 };
-    // let y = if number == 0 {5} else {"6"};
+    // let y = if number == 0 { 5 } else { "6" };
 
     // Repeating Code with loop
     // loop {

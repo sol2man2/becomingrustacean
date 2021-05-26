@@ -28,7 +28,7 @@ fn main() {
     // }
     // let mut s = String::from("hello world");
     // let word = first_word(&s);
-    // s.clear();
+    // s.clear(); // String::from("")
     // println!("s: {}", s);
     // println!("the first word index is: {}", word);
 
@@ -62,7 +62,6 @@ fn main() {
     // let word = first_word(&s);
     // s.clear();
     // println!("s: {}", s);
-    // println!("the first word index is: {}", s);
     // println!("the first word index is: {}", word);
 
     // String Literals Are Slices
@@ -72,24 +71,30 @@ fn main() {
     // fn first_word(s: &String) -> &str {
     // fn first_word(s: &str) -> &str {
 
-    // fn first_word(s: &str) -> &str {
-    //     let bytes = s.as_bytes();
-    //     for (i, &item) in bytes.iter().enumerate() {
-    //         if item == b' ' {
-    //             return &s[0..i];
-    //         }
-    //     }
-    //     &s[..]
-    // }
-    // let mut s = String::from("hello world");
-    // let word = first_word(&s);
-    // println!("s: {}", s);
-    // println!("the first word: {}", word);
+    fn first_word(s: &str) -> &str {
+        let bytes = s.as_bytes();
+        for (i, &item) in bytes.iter().enumerate() {
+            if item == b' ' {
+                return &s[0..i];
+            }
+        }
+        &s[..]
+    }
+    let mut s = String::from("hello world");
+    let word = first_word(&s);
 
-    // let s = "hello world";
-    // let word = first_word(&s);
-    // println!("s: {}", s);
-    // println!("the first word: {}", word);
+    let xx = "test";
+    let word1 = first_word(xx); // &"tst" str literal
+    let word2 = first_word(&"naver");
+    // let word3 = first_word("is".to_string());
+
+    println!("s: {}", s);
+    println!("the first word: {}", word);
+
+    let s = "hello world";
+    let word = first_word(&s);
+    println!("s: {}", s);
+    println!("the first word: {}", word);
 
     // let mut s = String::from("hello world");
     // let word = first_word(&my_string[..]);
