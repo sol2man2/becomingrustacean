@@ -32,13 +32,12 @@ fn main() {
     // ->
     // clazz* x = new clazz();
     // x->method();
-    // (*x)->method();
+    // (*x).method();
 
     // automatic referencing and dereferencing
     // rust는 호출에 따라 자동으로 &, &mut나 *를 추가한다.
     // p1.distance(&p2);
     // (&p1).distance(&p2);
-
     // Methods with More Parameters
     impl Rectangle {
         fn can_hold(&self, other: &Rectangle) -> bool {
