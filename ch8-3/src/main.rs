@@ -14,8 +14,6 @@ fn main() {
     let mut scores: HashMap<_, _> = teams.into_iter().zip(initial_scores.into_iter()).collect();
 
     // Hash Maps and Ownership
-    use std::collections::HashMap;
-
     let field_name = String::from("Favorite color");
     let field_value = String::from("Blue");
 

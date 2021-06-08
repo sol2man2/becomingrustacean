@@ -2,7 +2,10 @@ fn main() {
     println!("ch8-2!");
 
     // Storing UTF-8 Encoded Text with Strings
+
     // What Is a String?
+    // OsString, OsStr, CString, and CStr
+
     // Creating a New String
     let mut s = String::new();
     let data = "initial contents";
@@ -59,29 +62,37 @@ fn main() {
 
     // Internal Representation
     let hello = String::from("Hola");
+    println!("size of {}: {}", hello, hello.len());
     let hello = String::from("Здравствуйте");
+    println!("size of {}: {}", hello, hello.len());
 
     // let hello = "Здравствуйте";
     // let answer = &hello[0];
+    // 3 -> 208, д -> 151
 
     // Bytes and Scalar Values and Grapheme Clusters! Oh My!
     // “नमस्ते”
+
+    // bytes
     // [224, 164, 168, 224, 164, 174, 224, 164, 184, 224, 165, 141, 224, 164, 164, 224, 165, 135]
+    // chars, diacritics
     // ['न', 'म', 'स', '्', 'त', 'े']
+    // grapheme
     // ["न", "म", "स्", "ते"]
 
     // Slicing Strings
     let hello = "Здравствуйте";
     let s = &hello[0..4];
+    println!(":::{}", s);
 
     // Methods for Iterating Over Strings
-    for c in "नमस्ते".chars() {
-        println!("{}", c);
-    }
+    // for c in "नमस्ते".chars() {
+    //     println!("{}", c);
+    // }
 
-    for b in "नमस्ते".bytes() {
-        println!("{}", b);
-    }
+    // for b in "नमस्ते".bytes() {
+    //     println!("{}", b);
+    // }
 
     // Strings Are Not So Simple
 }
