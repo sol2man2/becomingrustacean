@@ -24,9 +24,11 @@ fn main() {
 
     // Reading Elements of Vectors
     let v = vec![1, 2, 3, 4, 5];
-
     let third: &i32 = &v[2];
     println!("1 The third element is {}", third);
+
+    let mut v = vec![String::from("a"), String::from("b"), String::from("c")];
+    let third: &String = &v[1];
 
     match v.get(2) {
         Some(third) => println!("2 The third element is {}", third),
