@@ -1,0 +1,11 @@
+/home/paruparo/prjs/rust/becomingrustacean/add/adder/target/rls/debug/deps/getrandom-ca2a9b892456609c.rmeta: /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/lib.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error_impls.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util_libc.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/use_file.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/linux_android.rs
+
+/home/paruparo/prjs/rust/becomingrustacean/add/adder/target/rls/debug/deps/getrandom-ca2a9b892456609c.d: /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/lib.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error_impls.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util_libc.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/use_file.rs /home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/linux_android.rs
+
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/lib.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/error_impls.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/util_libc.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/use_file.rs:
+/home/paruparo/.cargo/registry/src/github.com-1ecc6299db9ec823/getrandom-0.2.3/src/linux_android.rs:
