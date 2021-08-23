@@ -91,10 +91,10 @@ fn fifth() {
 }
 
 fn sixth() {
-    // fn get_animal() -> Animal {}
-    // fn get_animal() -> Cat {}
-    // fn handle_animal(Animal);
-    // fn handle_animal(Cat);
+    // fn get_animal() -> Animal {} // super
+    // fn get_animal() -> Cat {} // sub
+    // fn handle_animal(Animal); // sub
+    // fn handle_animal(Cat); // super
 }
 
 use std::cell::Cell;
